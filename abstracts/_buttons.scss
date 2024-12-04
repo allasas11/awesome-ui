@@ -1,0 +1,59 @@
+
+@use 'colors' as c;
+
+
+
+@mixin cta-button {
+    display: inline-block;
+    width: 350px;
+    padding: 25px 30px;
+    font-size: 1.255rem;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #647B64, #66AC66);
+    color: c.$primary-text-secondary;
+    text-decoration: none;
+    border-radius: 2px;
+    text-align: left;
+    letter-spacing: 2.48px;
+
+
+    @media (max-width: 425px) {
+        font-size: 0.625rem;
+        padding: 13px 15px;
+        width: 175px;
+       
+    }
+
+
+}
+
+
+
+@mixin cta-button-header {
+    padding: 10px 15px;
+    color: c.$primary-text-secondary;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    background: linear-gradient(45deg, #647B64, #66AC66);
+}
+
+
+@mixin form-button {
+    border: none;
+    padding: 20px;
+    text-align: left;
+    letter-spacing: .15em;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-size: 12.5px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #647B64, #66AC66);
+}
+
+
+
+
+
+
+
