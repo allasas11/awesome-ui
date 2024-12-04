@@ -1,3 +1,7 @@
+@use 'abstracts/colors' as c;
+
+
+
 *,*::before,*::after {
     margin: 0;
     padding: 0;
@@ -19,21 +23,21 @@ body {
 }
 
 
-$bg: #EFDCC6;
-$h2: #F3B562;
-$h3: #647B64;
-$main-fill: #647B64; 
-$primary-text: #333333;
-$secondary-text: #4f4f4f;
-$primary-text-secondary: #fefefe;
-$footer-bg: #F0DCC5;
-$tool-item-linear-gradient: linear-gradient(360deg, rgba(100, 123, 100, 0.77) 0%, rgba(100, 123, 100, 0) 66%, rgba(100, 123, 100, 0) 100%);
-$tool-bg-main: #ffffff;
+// $bg: #EFDCC6;
+// $h2: #F3B562;
+// $h3: #647B64;
+// $main-fill: #647B64; 
+// $primary-text: #333333;
+// $secondary-text: #4f4f4f;
+// $primary-text-secondary: #fefefe;
+// $footer-bg: #F0DCC5;
+// $tool-item-linear-gradient: linear-gradient(360deg, rgba(100, 123, 100, 0.77) 0%, rgba(100, 123, 100, 0) 66%, rgba(100, 123, 100, 0) 100%);
+// $tool-bg-main: #ffffff;
 
 
 
 h2 {
-    color: $h2;
+    color: c.$h2;
     font-size: 1.5rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -41,7 +45,7 @@ h2 {
 }
 
 h3 {
-    color: $main-fill;
+    color: c.$main-fill;
     font-size: 41px;
     line-height: 1.1;
     text-transform: uppercase;
@@ -61,7 +65,7 @@ h3 {
             font-size: 1.25rem;
             line-height: 1.3;
             font-weight: 500;
-            color: $main-fill;
+            color: c.$main-fill;
             margin-bottom: 1.5rem;
         }
     }
@@ -71,7 +75,7 @@ h3 {
             font-size: 1.25rem;
             line-height: 1.3;
             font-weight: 500;
-            color: $main-fill;
+            color: c.$main-fill;
             margin-bottom: 13px;
             text-transform: uppercase;
         }
@@ -83,7 +87,7 @@ footer a {
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.26;
-    color: $primary-text;
+    color: c.$primary-text;
 }
 
 footer ul {
@@ -130,7 +134,7 @@ footer ul {
 
                     a {
                         text-decoration: none;
-                        color: $primary-text;
+                        color: c.$primary-text;
                         text-transform: uppercase;
                         font-size: 1rem;
                         font-weight: 600;
@@ -148,7 +152,7 @@ footer ul {
             margin: 5px;
             a {
                 padding: 10px 15px;
-                color: $primary-text-secondary;
+                color: c.$primary-text-secondary;
                 text-transform: uppercase;
                 font-size: 1rem;
                 text-decoration: none;
@@ -175,7 +179,7 @@ footer ul {
         padding: 6rem 3rem 6rem 2rem;
 
         h1 {
-            color: $primary-text;
+            color: c.$primary-text;
             margin-bottom: 1rem;
             text-align: left;
             font-size: 3rem;
@@ -190,7 +194,7 @@ footer ul {
 
         p {
             font-size: 1.25rem;
-            color: $secondary-text;
+            color: c.$secondary-text;
             line-height: 1.32;
             margin-bottom: 2rem;
             letter-spacing: 0.64px;
@@ -205,7 +209,7 @@ footer ul {
             font-size: 1.255rem; 
             text-transform: uppercase; 
             background: linear-gradient(45deg, #647B64, #66AC66);
-            color: $primary-text-secondary; 
+            color: c.$primary-text-secondary; 
             text-decoration: none; 
             border-radius: 2px; 
             text-align: left;
@@ -245,7 +249,7 @@ footer ul {
         p {
             font-size: 1rem;
             line-height: 1.32;
-            color: $secondary-text;
+            color: c.$secondary-text;
             letter-spacing: 1.04;
             margin-bottom: 2.5rem;
         }
@@ -257,7 +261,7 @@ footer ul {
             font-size: 1.255rem; 
             text-transform: uppercase; 
             background: linear-gradient(45deg, #647B64, #66AC66);
-            color: $primary-text-secondary; 
+            color: c.$primary-text-secondary; 
             text-decoration: none; 
             border-radius: 2px; 
             text-align: left;
@@ -275,7 +279,7 @@ footer ul {
         .item {
             display: flex;
             flex-direction: column;
-            background-color: $tool-bg-main;
+            background-color: c.$tool-bg-main;
             border-radius: 8px;
             gap: 1rem;
             padding: 40px 40px 45px 40px;
@@ -286,13 +290,13 @@ footer ul {
                 align-items: center;
                 width: 48px;
                 height: 48px;
-                background-color: $main-fill;
+                background-color: c.$main-fill;
                 border-radius: 8px;
 
                 svg {
 
                     path {
-                        fill: $tool-bg-main; 
+                        fill: c.$tool-bg-main; 
                     }
                   }
             }
@@ -331,8 +335,8 @@ footer ul {
 
         .tool-item {
             width: 360px;
-            background: $tool-item-linear-gradient;
-            background-color: $tool-bg-main;
+            background: c.$tool-item-linear-gradient;
+            background-color: c.$tool-bg-main;
             display: flex;
             flex-direction: column;
             padding: 78px 50px 72px 50px;
@@ -345,7 +349,7 @@ footer ul {
             h4 {
                 font-size: 1.5rem;
                 line-height: 1,16;
-                color: $primary-text;
+                color: c.$primary-text;
                 margin-bottom: 0.5rem;
                 font-weight: 500;
             }
@@ -354,7 +358,7 @@ footer ul {
                 
                 font-size: 1rem;
                 line-height: 1.32;
-                color: $secondary-text;
+                color: c.$secondary-text;
             }
 
             
@@ -401,7 +405,7 @@ footer ul {
         p {
             font-size: 1rem;
             line-height: 1.32;
-            color: $secondary-text;
+            color: c.$secondary-text;
             letter-spacing: 1.04;
             margin-bottom: 2.5rem;
         }
@@ -413,7 +417,7 @@ footer ul {
             font-size: 1.255rem; 
             text-transform: uppercase; 
             background: linear-gradient(45deg, #647B64, #66AC66);
-            color: $primary-text-secondary; 
+            color: c.$primary-text-secondary; 
             text-decoration: none; 
             border-radius: 2px; 
             text-align: left;
@@ -443,7 +447,7 @@ footer ul {
         gap: 2.5rem;
         flex-direction: row;
         .card {
-            background:$tool-item-linear-gradient;
+            background: c.$tool-item-linear-gradient;
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
@@ -461,13 +465,13 @@ footer ul {
                     .card-title-primary {
                         font-size: 1rem;
                         line-height: 1.16;
-                        color: $primary-text;
+                        color: c.$primary-text;
                     }
                     .card-title-secondary {
                         font-size: 0.8125rem;
                         line-height: 1.32;
                         letter-spacing: 1.04;
-                        color: $secondary-text;
+                        color: c.$secondary-text;
                     }
                 }
             }
@@ -479,7 +483,7 @@ footer ul {
                 p {
                     line-height: 1.32;
                     letter-spacing: 1.04;
-                    color: $secondary-text;
+                    color: c.$secondary-text;
                     font-style: italic;
                 }
             }
@@ -495,7 +499,7 @@ footer ul {
 
 .footer {
     width:100%;
-    background-color: $footer-bg; 
+    background-color: c.$footer-bg; 
 
     .footer-container {
         display: grid;
@@ -546,7 +550,7 @@ footer ul {
                     small {
                         font-size: 0.875rem;
                         line-height: 1.24;
-                        color: $secondary-text;
+                        color: c.$secondary-text;
                         margin-bottom: 1.25rem;
 
                         .copyright-text {
@@ -596,7 +600,7 @@ footer ul {
                         resize: vertical;
 
                         &::placeholder {
-                            color: $secondary-text; 
+                            color: c.$secondary-text; 
                             font-size: 14px;
                             margin: 12px 14px;
 
